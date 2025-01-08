@@ -39,8 +39,8 @@ cosmere_word_count = sum(books.values())
 def main():
     books_read = []
     
-    st.title("Cosmere Completion Calculator")
-    st.write("Check which books you have read to calculate what percent of the Cosmere you have read.")
+    st.title("Cosmere Completion Percent Calculator")
+    st.write("Mark which books you have read to calculate what percent of the Cosmere you have read.")
     st.divider()
 
     st.write("Mistborn Era 1:")
