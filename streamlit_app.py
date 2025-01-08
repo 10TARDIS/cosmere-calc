@@ -3,6 +3,7 @@ import streamlit as st
 st.set_page_config(
     page_title="Cosmere Completion Calculator"
     page_icon="🌌"
+    )
 
 books = {
     "The Eleventh Metal": 6713,
