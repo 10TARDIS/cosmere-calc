@@ -18,6 +18,15 @@ books = {
     "Bands of Mourning": 131325,
     "The Lost Metal": 165352,
 
+
+    "The Way of Kings": 386022,
+    "Words of Radiance": 402168,
+    "Edgedancer": 40660,
+    "Oathbringer": 456283,
+    "Dawnshard": 56248,
+    "Rhythm of War": 467876,
+    "Wind and Truth": 487746,
+    
     "Elantris": 202835,
     "The Hope of Elantris": 6030,
     "The Emperor's Soul": 31925,
@@ -28,14 +37,6 @@ books = {
     "Tress of the Emerald Sea": 111658,
     "Yumi and the Nightmare Painter": 118787,
     "The Sunlit Man": 107408,
-
-    "The Way of Kings": 386022,
-    "Words of Radiance": 402168,
-    "Edgedancer": 40660,
-    "Oathbringer": 456283,
-    "Dawnshard": 56248,
-    "Rhythm of War": 467876,
-    "Wind and Truth": 487746,
     }
 
 cosmere_word_count = sum(books.values())
@@ -55,25 +56,12 @@ def main():
     hero_of_ages = st.checkbox("The Hero of Ages")
     secret_history = st.checkbox("Secret History")
     
-    
     st.write("Mistborn Era 2:")
     alloy_of_law = st.checkbox("Alloy of Law")
     allowmancer_jak = st.checkbox("Allomancer Jak and the Pits of Eltania")
     shadows_of_self = st.checkbox("Shadows of Self")
     bands_of_mourning = st.checkbox("Bands of Mourning")
     lost_metal = st.checkbox("The Lost Metal")
-
-    st.write("Stand-Alone Novels:")
-    elantris = st.checkbox("Elantris")
-    hope_of_elantris = st.checkbox("The Hope of Elantris")
-    emperors_soul = st.checkbox ("The Emperor's Soul")
-    warbreaker = st.checkbox("Warbreaker")
-    white_sand = st.checkbox("White Sand (all three volumes)")
-    shadows_for_silence = st.checkbox("Shadows for Silence in the Forests of Hell")
-    sixth_of_the_dust = st.checkbox("Sixth of the Dust")
-    tress = st.checkbox("Tress of the Emerald Sea")
-    yumi = st.checkbox("Yumi and the Nightmare Painter")
-    sunlit_man = st.checkbox("The Sunlit Man")
 
     st.write("The Stormlight Archive:")
     way_of_kings = st.checkbox("The Way of Kings")
@@ -83,6 +71,19 @@ def main():
     dawnshard = st.checkbox("Dawnshard")
     rhythm_of_war = st.checkbox("Rhythm of War")
     wind_and_truth = st.checkbox("Wind and Truth")
+    
+    st.write("Stand-Alone Novels:")
+    elantris = st.checkbox("Elantris")
+    hope_of_elantris = st.checkbox("The Hope of Elantris")
+    emperors_soul = st.checkbox ("The Emperor's Soul")
+    warbreaker = st.checkbox("Warbreaker")
+    white_sand = st.checkbox("White Sand (all three volumes)")
+    shadows_for_silence = st.checkbox("Shadows for Silence in the Forests of Hell")
+    sixth_of_the_dust = st.checkbox("Sixth of the Dusk")
+    tress = st.checkbox("Tress of the Emerald Sea")
+    yumi = st.checkbox("Yumi and the Nightmare Painter")
+    sunlit_man = st.checkbox("The Sunlit Man")
+
 
     if eleventh_metal:
         books_read.append(books.get("The Eleventh Metal"))  
@@ -106,27 +107,6 @@ def main():
     if lost_metal:
         books_read.append(books.get("The Lost Metal"))
 
-    if elantris:
-        books_read.append(books.get("Elantris"))
-    if hope_of_elantris:
-        books_read.append(books.get("The Hope of Elantris"))
-    if emperors_soul:
-        books_read.append(books.get("The Emperor's Soul"))
-    if warbreaker:
-        books_read.append(books.get("Warbreaker"))
-    if white_sand:
-        books_read.append(books.get("White Sand"))
-    if shadows_for_silence:
-        books_read.append(books.get("Shadows for Silence in the Forests of Hell"))
-    if sixth_of_the_dust:
-        books_read.append(books.get("Sixth of the Dust"))
-    if tress:
-        books_read.append(books.get("Tress of the Emerald Sea"))
-    if yumi:
-        books_read.append(books.get("Yumi and the Nightmare Painter"))
-    if sunlit_man:
-        books_read.append(books.get("The Sunlit Man"))
-
     if way_of_kings:
         books_read.append(books.get("The Way of Kings"))
     if words_of_radiance:
@@ -141,6 +121,27 @@ def main():
         books_read.append(books.get("Rhythm of War"))
     if wind_and_truth:
         books_read.append(books.get("Wind and Truth"))
+
+    if elantris:
+        books_read.append(books.get("Elantris"))
+    if hope_of_elantris:
+        books_read.append(books.get("The Hope of Elantris"))
+    if emperors_soul:
+        books_read.append(books.get("The Emperor's Soul"))
+    if warbreaker:
+        books_read.append(books.get("Warbreaker"))
+    if white_sand:
+        books_read.append(books.get("White Sand"))
+    if shadows_for_silence:
+        books_read.append(books.get("Shadows for Silence in the Forests of Hell"))
+    if sixth_of_the_dust:
+        books_read.append(books.get("Sixth of the Dusk"))
+    if tress:
+        books_read.append(books.get("Tress of the Emerald Sea"))
+    if yumi:
+        books_read.append(books.get("Yumi and the Nightmare Painter"))
+    if sunlit_man:
+        books_read.append(books.get("The Sunlit Man"))
 
     st.divider()
     
