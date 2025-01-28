@@ -24,7 +24,7 @@ books = {
     "Warbreaker": 245471,
     "White Sand": 208838,
     "Shadows for Silence in the Forests of Hell": 17647,
-    "Sixth of the Dust": 17794,
+    "Sixth of the Dusk": 17794,
     "Tress of the Emerald Sea": 111658,
     "Yumi and the Nightmare Painter": 118787,
     "The Sunlit Man": 107408,
