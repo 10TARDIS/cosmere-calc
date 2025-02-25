@@ -13,12 +13,15 @@ books = {
     "Secret History": 44981,
 
     "Alloy of Law": 96979,
-    "Allomancer Jak and the Pits of Eltania": 7047,
     "Shadows of Self": 115209,
+    "Allomancer Jak and the Pits of Eltania": 7047,
     "Bands of Mourning": 131325,
     "The Lost Metal": 165352,
 
-
+    "Elantris": 202835,
+    "The Hope of Elantris": 6030,
+    "The Emperor's Soul": 31925,
+    
     "The Way of Kings": 386022,
     "Words of Radiance": 402168,
     "Edgedancer": 40660,
@@ -27,9 +30,7 @@ books = {
     "Rhythm of War": 467876,
     "Wind and Truth": 487746,
     
-    "Elantris": 202835,
-    "The Hope of Elantris": 6030,
-    "The Emperor's Soul": 31925,
+
     "Warbreaker": 245471,
     "White Sand": 208838,
     "Shadows for Silence in the Forests of Hell": 17647,
@@ -58,11 +59,16 @@ def main():
     
     st.write("Mistborn Era 2:")
     alloy_of_law = st.checkbox("Alloy of Law")
-    allowmancer_jak = st.checkbox("Allomancer Jak and the Pits of Eltania")
     shadows_of_self = st.checkbox("Shadows of Self")
+    allowmancer_jak = st.checkbox("Allomancer Jak and the Pits of Eltania")
     bands_of_mourning = st.checkbox("Bands of Mourning")
     lost_metal = st.checkbox("The Lost Metal")
 
+    st.write("Elantris:")
+    elantris = st.checkbox("Elantris")
+    hope_of_elantris = st.checkbox("The Hope of Elantris")
+    emperors_soul = st.checkbox ("The Emperor's Soul")
+    
     st.write("The Stormlight Archive:")
     way_of_kings = st.checkbox("The Way of Kings")
     words_of_radiance = st.checkbox("Words of Radiance")
@@ -73,9 +79,6 @@ def main():
     wind_and_truth = st.checkbox("Wind and Truth")
     
     st.write("Stand-Alone Novels:")
-    elantris = st.checkbox("Elantris")
-    hope_of_elantris = st.checkbox("The Hope of Elantris")
-    emperors_soul = st.checkbox ("The Emperor's Soul")
     warbreaker = st.checkbox("Warbreaker")
     white_sand = st.checkbox("White Sand (all three volumes)")
     shadows_for_silence = st.checkbox("Shadows for Silence in the Forests of Hell")
@@ -98,15 +101,22 @@ def main():
 
     if alloy_of_law:
         books_read.append(books.get("Alloy of Law"))
-    if allowmancer_jak:
-        books_read.append(books.get("Allomancer Jak and the Pits of Eltania"))
     if shadows_of_self:
         books_read.append(books.get("Shadows of Self"))
+    if allowmancer_jak:
+        books_read.append(books.get("Allomancer Jak and the Pits of Eltania"))
     if bands_of_mourning:
         books_read.append(books.get("Bands of Mourning"))
     if lost_metal:
         books_read.append(books.get("The Lost Metal"))
 
+    if elantris:
+        books_read.append(books.get("Elantris"))
+    if hope_of_elantris:
+        books_read.append(books.get("The Hope of Elantris"))
+    if emperors_soul:
+        books_read.append(books.get("The Emperor's Soul"))
+    
     if way_of_kings:
         books_read.append(books.get("The Way of Kings"))
     if words_of_radiance:
@@ -122,12 +132,6 @@ def main():
     if wind_and_truth:
         books_read.append(books.get("Wind and Truth"))
 
-    if elantris:
-        books_read.append(books.get("Elantris"))
-    if hope_of_elantris:
-        books_read.append(books.get("The Hope of Elantris"))
-    if emperors_soul:
-        books_read.append(books.get("The Emperor's Soul"))
     if warbreaker:
         books_read.append(books.get("Warbreaker"))
     if white_sand:
